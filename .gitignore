@@ -1,0 +1,11 @@
+.psd
+.sass-cache/
+.rb
+sass/
+*.psd
+
+*.rb
+
+page1.jpg
+
+page2.jpg
