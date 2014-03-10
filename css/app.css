@@ -318,12 +318,15 @@ ul#small-menu.active {
   margin-right: 10px;
 }
 
-.subpage #content-container {
+.subpage .content-container {
   position: relative;
-  margin-top: 120px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.subpage #content-container #content {
+.subpage .content-container .content.min {
+  min-height: 600px;
+}
+.subpage .content-container .content {
   width: 90%;
   margin: 0 auto;
   max-width: 1200px;
@@ -334,51 +337,56 @@ ul#small-menu.active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 600px;
   padding: 3em;
   padding-top: 2em;
   color: black;
 }
-.subpage #content-container #content a {
+.subpage .content-container .content a {
   color: black;
   color: #252525;
   text-shadow: 0px 0px 15px #89dfff;
 }
-.subpage #content-container #content .title {
+.subpage .content-container .content .title {
   font-size: 3.75em;
   margin-bottom: 5px;
   text-align: center;
   font-family: "nexa bold";
   text-shadow: 0px 0px 24px rgba(255, 255, 255, 0.4);
 }
-.subpage #content-container #content h2 {
+.subpage .content-container .content h2 {
   font-size: 1.8em;
   margin-top: 15px;
   margin-bottom: 10px;
   font-family: "nexa bold";
   text-shadow: 0px 0px 24px rgba(255, 255, 255, 0.2);
 }
-.subpage #content-container #content h3 {
+.subpage .content-container .content h3 {
   font-size: 1.3em;
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: "nexa bold";
   text-shadow: 0px 0px 24px rgba(255, 255, 255, 0.2);
 }
-.subpage #content-container #content p {
+.subpage .content-container .content p {
   font-size: 1.35em;
   margin-top: 10px;
   margin-bottom: 10px;
   text-shadow: 0px 0px 24px rgba(255, 255, 255, 0.2);
 }
-.subpage #content-container #content .row {
+.subpage .content-container .content .row {
   margin: 0px;
   max-width: none;
   margin-left: -0.9375em;
   margin-right: -0.9375em;
 }
-.subpage #content-container #content .bullet:before {
+.subpage .content-container .content .bullet:before {
   content: url("../img/bullet.png");
+}
+.subpage .content-container.first {
+  margin-top: 120px;
+}
+.subpage .content-container.last {
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 780px) {
@@ -1758,6 +1766,24 @@ th.hide-for-xlarge {
     font-size: 1.5em;
     line-height: 1em;
   }
+}
+
+#faq .content-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#faq .content-container .content .title {
+  margin-bottom: -10px;
+}
+#faq .content-container.first {
+  margin-top: 120px;
+}
+#faq .content-container.last {
+  margin-bottom: 50px;
+}
+
+#about .content p {
+  text-indent: 30px;
 }
 
 #events.subpage #content-container #content {
