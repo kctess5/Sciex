@@ -1,7 +1,7 @@
 $(document).ready(function() { 
 
 	function killAnim() {
-		controller.removeTween('#logo-container');
+		controller.removeTween('#anim-trigger'); 
 		$('#glasses-small').css("opacity",1);
 		$('#header').css("width","100%");
 		$('#feature').css("opacity",0);
